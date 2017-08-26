@@ -7,7 +7,8 @@ var Schema = mongoose.Schema;
 var customerSchema = new Schema({
     name: String,
     address: String,
-    email: String
+    email: String,
+    order: [{ productType: String, productSpec: String }]
 });
 
 // the schema is useless so far
